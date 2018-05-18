@@ -4,10 +4,10 @@
   height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position:relative;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin-bottom: 10px;
 }
 .banner h1 {
   font-size: 50px;
@@ -30,7 +30,36 @@
   margin-bottom: 30px;
 }
 
-.banner div.last_child {
-  position: absolute;
+.navbar {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.btn-treehouse {
+  justify-text: center;
+  height: 50px;
+  color: white;
+  padding: 10px 10px;
+  margin: 0px 10px 0px 0px;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #6AD58B;
+  transition: background 0.3s ease;
+}
+.btn-treehouse:hover {
+  opacity: 1;
+  background: #3ac162;
+  text-decoration: none;
+  color: white;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px) ;
+  justify-content: center;
+  align-items: center;
+}
